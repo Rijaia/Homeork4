@@ -6,6 +6,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
     }
 
     public static void task1() {
@@ -67,4 +69,44 @@ public class Main {
         }
 
     }
-}
+    public static void task6(){
+        System.out.println("Задача 6");
+        int seatPlace = 60;
+        int standingPlace = 102 - seatPlace;
+        int numberOfPassenger = 59;
+        if (numberOfPassenger < (seatPlace - 1)){
+            System.out.println("Есть сидячие места");
+        }else {
+            if (numberOfPassenger == ( seatPlace -1)){
+                System.out.println("Есть одно сидячее место");
+            }else {
+                if (numberOfPassenger > seatPlace && numberOfPassenger < (standingPlace - 1)){
+                    System.out.println("Есть стоячие места");
+                } else {
+                    if (numberOfPassenger == (standingPlace - 1)){
+                        System.out.println("Есть одно стоячее место");
+                    }else {
+                        System.out.println("Вагон полностью занят");
+                    }
+                }
+            }
+        }
+    }
+    public static void task7(){
+        System.out.println("Задача 7");
+        int one = 3;
+        int two = 5;
+        int three = 20;
+        if (one > two){
+            if (one > three){
+                System.out.println("Число "+one+" самое большое");
+            }else {
+                System.out.println("Число "+three+" самое большое");
+            }}
+            if (two > three){
+                    System.out.println("Число "+two+" самое большое");
+                } else {
+                System.out.println("Число "+three+" самое большое");
+            }
+        }
+    }
